@@ -1,0 +1,22 @@
+@import '../mixins/media';
+/* Layout-variables? */
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-2xl: 1600px;
+
+:root {
+  --rem-size: 10px;
+}
+
+@include screen-sm {
+  :root {
+    --rem-size: 12px;
+  }
+}
+@include screen-xl {
+  :root {
+    --rem-size: 15px;
+  }
+}
