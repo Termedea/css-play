@@ -1,14 +1,20 @@
-$col-dark-2: #314253;
-$col-dark-1: #524979;
-$col-main: #97619d;
-$col-light-1: #9690bb;
-$col-light-2: #bfcfd8;
+$color-dark-2: #314253;
+$color-dark-1: #524979;
+$color-main: #97619d;
+$color-light-1: #9690bb;
+$color-light-2: #bfcfd8;
 
-$main-to-light-45: linear-gradient(45deg, $col-main 0%, $col-light-2 100%);
-$main-to-dark-45: linear-gradint(45deg, $col-main 0%, $col-dark-2 100%);
-$main-shaded: linear-gradient(0deg, $col-main 55%, darken($col-main, 20%) 100%);
-$col-dark-1-shaded: linear-gradient(
+$main-to-light-45: linear-gradient(45deg, $color-main 0%, $color-light-2 100%);
+$main-to-dark-45: linear-gradint(45deg, $color-main 0%, $color-dark-2 100%);
+
+$main-shaded: linear-gradient(
   0deg,
-  $col-dark-1 55%,
-  darken($col-dark-1, 20%) 100%
+  $color-main 0,
+  darken($color-main, 5%) 100%
+);
+
+$color-dark-1-shaded: linear-gradient(
+  180deg,
+  $color-dark-1 0,
+  darken($color-dark-1, 5%) 100%
 );

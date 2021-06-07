@@ -1,23 +1,22 @@
 .site {
   background: $main-to-light-45;
-  background-color: $col-light-2;
   position: relative;
-  overflow: auto;
-
-  height: 100vh;
+  min-height: 100vh;
   z-index: -2;
+
   &__image {
     pointer-events: none;
-
     object-fit: cover;
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: -1;
-    width: 100vw;
-    height: 100vh;
     filter: blur(10px) opacity(0.3);
   }
   &__header {
-    background: $col-dark-1;
+    background: $color-dark-1;
+    position: sticky;
+    top: 0;
+    left: 0;
   }
   &__title {
     font-family: $title;

@@ -1,5 +1,6 @@
 .main-menu {
-  @include box-effect($col-dark-1);
+  @include box-effect($color-dark-1);
+  background: $color-dark-1-shaded;
   &__list {
     display: flex;
     gap: 1rem;

@@ -1,7 +1,7 @@
 @mixin box-effect($base-color, $deg: 0) {
   @if $deg == 45 {
   } @else {
-    box-shadow: 0 8px 11px 3px darken($base-color, 10%),
+    box-shadow: 0 3px 11px 3px darken($base-color, 10%),
       0 -3px 11px 3px lighten($base-color, 10%);
   }
 }
