@@ -1,0 +1,32 @@
+.site {
+  background: $main-to-light-45;
+  background-color: $col-light-2;
+  position: relative;
+  overflow: auto;
+
+  height: 100vh;
+  z-index: -2;
+  &__image {
+    pointer-events: none;
+
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(10px) opacity(0.3);
+  }
+  &__header {
+    background: $col-dark-1;
+  }
+  &__title {
+    font-family: $title;
+    font-size: 8rem;
+    padding: 1rem;
+    font-weight: 700;
+    background: $main-to-light-45;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+}

@@ -1,0 +1,9 @@
+.main-menu {
+  @include box-effect($col-dark-1);
+  &__list {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+}
