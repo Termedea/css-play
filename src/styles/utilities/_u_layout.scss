@@ -21,7 +21,13 @@
 }
 .gap {
   &--1 {
-    gap: 1rem;
+    gap: 2rem;
+  }
+  &--2 {
+    gap: 4rem;
+  }
+  &--3 {
+    gap: 6rem;
   }
 }
 .flex {

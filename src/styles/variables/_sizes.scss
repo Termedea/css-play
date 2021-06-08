@@ -10,15 +10,15 @@ $screen-2xl: 1600px;
   --rem-size: 10px;
 }
 
-@include at-screen-sm {
+/* @include at-screen-sm {
   :root {
-    --rem-size: 12px;
+    --rem-size: 11px;
   }
 }
 @include at-screen-xl {
   :root {
-    --rem-size: 15px;
+    --rem-size: 12px;
   }
 }
-
-$width-lg: 75rem;
+ */
+$width-lg: 105rem;

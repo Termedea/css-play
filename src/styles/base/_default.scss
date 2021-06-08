@@ -2,3 +2,9 @@ html {
   font-size: var(--rem-size);
   font-family: $body;
 }
+
+:where(p, li) {
+  font-family: $body;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}

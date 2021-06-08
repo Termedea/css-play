@@ -1,10 +1,12 @@
 .main-menu {
   @include box-effect($color-dark-1);
   background: $color-dark-1-shaded;
+  margin-top: 1.3rem;
   &__list {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: flex-end;
-    padding: 1rem;
+    padding: 1rem 3rem;
+    color: $color-light-2;
   }
 }
