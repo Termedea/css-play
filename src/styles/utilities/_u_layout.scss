@@ -13,9 +13,14 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   width: 100%;
+  > * {
+    grid-column: span 12;
+  }
   &--half {
-    > * {
-      grid-column: span 6;
+    @include at-screen-lg {
+      > * {
+        grid-column: span 6;
+      }
     }
   }
 }

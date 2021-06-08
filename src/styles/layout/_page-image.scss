@@ -1,0 +1,9 @@
+.page-image {
+  pointer-events: none;
+  object-fit: cover;
+  position: fixed;
+  min-height: 100vh;
+  top: 0;
+  z-index: -1;
+  filter: blur(10px) opacity(0.3);
+}
