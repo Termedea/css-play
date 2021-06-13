@@ -1,0 +1,11 @@
+.checklist {
+  &__item {
+    &::before {
+      content: '\f0a4';
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      margin-right: 1rem;
+    }
+  }
+}
