@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+html {
+  font-size: var(--size-root-font);
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  /* Padding is not inherited */
+  padding: 3rem;
+  box-sizing: border-box;
+}
