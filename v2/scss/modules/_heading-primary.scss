@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+@use 'sass:map';
+
+.heading-primary {
+  position: relative;
+
+  height: 33rem;
+
+  &--main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    letter-spacing: 2rem;
+    display: block;
+    font-size: 10rem;
+    font-family: $type-heading;
+    color: $color-main-base;
+    text-shadow: map.get($color-blue, 900) -7px -5px 10px;
+  }
+  &--sub {
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    z-index: -1;
+    margin-top: -4rem;
+    font-size: 20rem;
+    font-family: $type-cursive;
+    transform: skewX(-10deg) rotate(-5deg);
+
+    text-shadow: map.get($color-rose, 600) -7px -5px 5px;
+    @include grad-linear-bl-tr(
+      map.get($color-rose, 200),
+      map-get($color-main, 400)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+}

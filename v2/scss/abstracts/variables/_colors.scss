@@ -1,0 +1,55 @@
+@use "sass:map";
+@use "sass:color";
+
+$main-base: hsl(29, 96%, 56%);
+$main: (
+  100: color.scale($main-base, $lightness: 80%),
+  200: color.scale($main-base, $lightness: 60%),
+  300: color.scale($main-base, $lightness: 40%),
+  400: color.scale($main-base, $lightness: 20%),
+  500: $main-base,
+  600: color.scale($main-base, $lightness: -20%),
+  700: color.scale($main-base, $lightness: -40%),
+  800: color.scale($main-base, $lightness: -60%),
+  900: color.scale($main-base, $lightness: -70%)
+);
+
+$red-base: hsl(349, 96%, 31%);
+$red: (
+  100: color.scale($red-base, $lightness: 80%),
+  200: color.scale($red-base, $lightness: 60%),
+  300: color.scale($red-base, $lightness: 40%),
+  400: color.scale($red-base, $lightness: 20%),
+  500: $red-base,
+  600: color.scale($red-base, $lightness: -20%),
+  700: color.scale($red-base, $lightness: -40%),
+  800: color.scale($red-base, $lightness: -60%),
+  900: color.scale($red-base, $lightness: -80%)
+);
+
+$rose-base: hsl(323, 73%, 22%);
+
+$rose: (
+  100: color.scale($rose-base, $lightness: 80%),
+  200: color.scale($rose-base, $lightness: 60%),
+  300: color.scale($rose-base, $lightness: 40%),
+  400: color.scale($rose-base, $lightness: 20%),
+  500: $rose-base,
+  600: color.scale($rose-base, $lightness: -20%),
+  700: color.scale($rose-base, $lightness: -40%),
+  800: color.scale($rose-base, $lightness: -60%),
+  900: color.scale($rose-base, $lightness: -80%)
+);
+
+$blue-base: hsl(192, 72%, 21%);
+$blue: (
+  100: color.scale($blue-base, $lightness: 80%),
+  200: color.scale($blue-base, $lightness: 60%),
+  300: color.scale($blue-base, $lightness: 40%),
+  400: color.scale($blue-base, $lightness: 20%),
+  500: $blue-base,
+  600: color.scale($blue-base, $lightness: -20%),
+  700: color.scale($blue-base, $lightness: -40%),
+  800: color.scale($blue-base, $lightness: -60%),
+  900: color.scale($blue-base, $lightness: -80%)
+);

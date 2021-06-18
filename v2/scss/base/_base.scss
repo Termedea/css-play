@@ -1,13 +1,21 @@
 @use '../abstracts/' as *;
+@use "sass:map";
+
 html {
   font-size: var(--size-root-font);
 }
 body {
-  font-family: 'Lato', sans-serif;
+  background: map.get($color-blue, 600);
+  font-family: $type-body;
   font-weight: 400;
   line-height: 1.7;
-  color: $color-grey-dark;
-  /* Padding is not inherited */
-  padding: 3rem;
+  height: 100vh;
+
   box-sizing: border-box;
+  color: lighten($color-main-base, 80%);
+}
+
+:where(p) {
+  line-height: 18rem;
+  font-size: 16rem;
 }

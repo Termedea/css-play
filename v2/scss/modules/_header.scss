@@ -1,0 +1,10 @@
+@use 'sass:map';
+@use '../abstracts/' as *;
+
+.header {
+  position: relative;
+  background: map.get($color-rose, 800);
+  z-index: -3;
+  box-shadow: map.get($color-blue, 800) 5px 5px 20px;
+  margin-bottom: 3rem;
+}

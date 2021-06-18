@@ -1,0 +1,12 @@
+@mixin linear-t-b($from, $to) {
+  background-image: linear-gradient(0deg, $from, $to);
+}
+@mixin linear-tl-br($from, $to) {
+  background-image: linear-gradient(to bottom right, $from, $to);
+}
+@mixin linear-l-r($from, $to) {
+  background-image: linear-gradient(to right, $from, $to);
+}
+@mixin linear-bl-tr($from, $to) {
+  background-image: linear-gradient(to top right, $from, $to);
+}
