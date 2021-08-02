@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Viaoda+Libre&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Viaoda+Libre&display=swap");
 /* Bad practice with px. Use percentage to enable user to change font-size */
 /* because these values nees to be re-calculated in the browser, we can't rely on the SASS variables. */
 :root {
@@ -27,12 +27,12 @@ html {
 
 body {
   background: #0c3d4a;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   height: 100vh;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   color: white;
 }
 
@@ -47,7 +47,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 :where(h1, h2, h3, h4) {
@@ -497,23 +497,11 @@ body {
 .row:not(:last-of-type) {
   margin-bottom: 6rem;
 }
-.row .col,
-.row .col-3-4,
-.row .col-2-4,
-.row .col-1-4,
-.row .col-2-3,
-.row .col-1-3,
-.row .col-1-2 {
+.row .col, .row .col-3-4, .row .col-2-4, .row .col-1-4, .row .col-2-3, .row .col-1-3, .row .col-1-2 {
   background-color: #ea75bd;
   padding: 1rem;
 }
-.row .col:not(:last-of-type),
-.row .col-3-4:not(:last-of-type),
-.row .col-2-4:not(:last-of-type),
-.row .col-1-4:not(:last-of-type),
-.row .col-2-3:not(:last-of-type),
-.row .col-1-3:not(:last-of-type),
-.row .col-1-2:not(:last-of-type) {
+.row .col:not(:last-of-type), .row .col-3-4:not(:last-of-type), .row .col-2-4:not(:last-of-type), .row .col-1-4:not(:last-of-type), .row .col-2-3:not(:last-of-type), .row .col-1-3:not(:last-of-type), .row .col-1-2:not(:last-of-type) {
   margin-right: 2rem;
 }
 .row .col-1-2 {
@@ -523,16 +511,16 @@ body {
   width: calc((100% - 2 * 2rem) / 3);
 }
 .row .col-2-3 {
-  width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem);
+  width: calc( 2 * ((100% - 2 * 2rem) / 3) + 2rem );
 }
 .row .col-1-4 {
   width: calc((100% - 2 * 2rem) / 4);
 }
 .row .col-2-4 {
-  width: calc(2 * ((100% - 3 * 2rem) / 4) + 2rem);
+  width: calc( 2 * ((100% - 3 * 2rem) / 4) + 2rem );
 }
 .row .col-3-4 {
-  width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem);
+  width: calc( 3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem );
 }
 
 .header {
@@ -540,7 +528,7 @@ body {
   background: #27061a;
   z-index: -3;
   -webkit-box-shadow: #061f25 5px 5px 20px;
-  box-shadow: #061f25 5px 5px 20px;
+          box-shadow: #061f25 5px 5px 20px;
   margin-bottom: 3rem;
 }
 
@@ -555,7 +543,7 @@ body {
   letter-spacing: 2rem;
   display: block;
   font-size: 10rem;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #fb8b23;
   text-shadow: #030f12 -7px -5px 10px;
 }
@@ -566,19 +554,13 @@ body {
   z-index: -1;
   margin-top: -4rem;
   font-size: 20rem;
-  font-family: 'Parisienne', cursive;
+  font-family: "Parisienne", cursive;
   -webkit-transform: skewX(-10deg) rotate(-5deg);
-  transform: skewX(-10deg) rotate(-5deg);
+          transform: skewX(-10deg) rotate(-5deg);
   text-shadow: #4e0c35 -7px -5px 5px;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    right top,
-    from(#ea75bd),
-    to(#fba24f)
-  );
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ea75bd), to(#fba24f));
   background-image: linear-gradient(to top right, #ea75bd, #fba24f);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }

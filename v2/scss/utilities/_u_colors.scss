@@ -1,49 +1,21 @@
 @use '../abstracts/variables/' as *;
 
-@each $name, $color in $color-rose {
-  .text-rose-#{$name} {
-    color: #{$color};
-  }
-  .bg-rose-#{$name} {
-    background-color: #{$color};
-  }
-  .border-rose-#{$name} {
-    border-color: #{$color};
-  }
-}
+@mixin generate-colors($name, $color-base) {
+  @each $variant, $color in $color-base {
+    .text-#{name}-#{$variant} {
+      color: #{$color};
+    }
 
-@each $name, $color in $color-main {
-  .text-main-#{$name} {
-    color: #{$color};
-  }
-  .bg-main-#{$name} {
-    background-color: #{$color};
-  }
-  .border-main-#{$name} {
-    border-color: #{$color};
-  }
-}
+    .bg-#{name}-#{$variant} {
+      background-color: #{$color};
+    }
 
-@each $name, $color in $color-red {
-  .text-red-#{$name} {
-    color: #{$color};
-  }
-  .bg-red-#{$name} {
-    background-color: #{$color};
-  }
-  .border-red-#{$name} {
-    border-color: #{$color};
+    .border-#{name}-#{$variant} {
+      border-color: #{$color};
+    }
   }
 }
-
-@each $name, $color in $color-blue {
-  .text-blue-#{$name} {
-    color: #{$color};
-  }
-  .bg-blue-#{$name} {
-    background-color: #{$color};
-  }
-  .border-blue-#{$name} {
-    border-color: #{$color};
-  }
-}
+@include generate-colors('rose', $color-rose);
+@include generate-colors('main', $color-main);
+@include generate-colors('red', $color-red);
+@include generate-colors('blue', $color-blue);
